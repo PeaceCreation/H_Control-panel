@@ -1,0 +1,13 @@
+@import "../sass/config/variables.scss";
+@import "../sass/config/layout.scss";
+@import "../sass/config/colors.scss";
+
+@import '../sass/utilities/spacing.scss';
+
+
+
+$color: silver;
+
+h1{
+    color:$color;
+}
