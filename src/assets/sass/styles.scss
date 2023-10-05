@@ -4,6 +4,15 @@
 
 @import '../sass/utilities/spacing.scss';
 
+@import '../sass/base/fonts.scss';
+@import '../sass/base/global.scss';
+@import '../sass/base/typography.scss';
+@import '../sass/base/links.scss';
+
+
+@import "../sass/components/components.scss";
+@import "../sass/components/demo.scss";
+
 
 
 $color: silver;

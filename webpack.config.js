@@ -66,9 +66,9 @@ devServer: {
       {
         test: /\.(eot|svg|woff|woff2|ttf)$/i,
         type: 'asset/resource',
-        generator:{
-            filename: "app/fonts/[name][ext]",
-        }
+        // generator:{
+        //     filename: "app/fonts/[name][ext]",
+        // }
       },
         ],
       },
