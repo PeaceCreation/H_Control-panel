@@ -1,0 +1,27 @@
+.c-list{
+    display:flex;
+    align-items: center;
+    width:100%;
+    background-color: white;
+    padding:spacing("extra-small") spacing("small");
+    box-shadow: 0 0 0 1px rgba( black, 0.05);
+    &__media{
+        height: 60px;
+        width: 60px;
+        margin-left:spacing("small");
+    }
+    &__data{
+        flex-grow:1;
+        margin-left:spacing("small");
+    }
+    &__actions{
+        margin-right: auto;
+        text-align: left;
+        margin-left: spacing("small");
+        opacity: 0;
+        transition: all 200ms ease;
+        &:hover{
+            opacity:1;
+        }
+    }
+}
