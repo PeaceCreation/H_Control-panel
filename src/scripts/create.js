@@ -1,4 +1,5 @@
 const fs= require('fs');
+const { type } = require('os');
 const exec= require('child_process').exec;
 const component= process.argv[2];
 fs.readFile( "./src/components/template.html", "utf8", (err, source) => {

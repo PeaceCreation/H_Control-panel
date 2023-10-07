@@ -1,8 +1,11 @@
+@import '../sass/vendors/icon/style.css';
+
 @import "../sass/config/variables.scss";
 @import "../sass/config/layout.scss";
 @import "../sass/config/colors.scss";
 
 @import '../sass/utilities/spacing.scss';
+@import '../sass/utilities/mixin-card.scss';
 
 @import '../sass/base/fonts.scss';
 @import '../sass/base/global.scss';
@@ -10,8 +13,14 @@
 @import '../sass/base/links.scss';
 
 
-// @import "../sass/components/components.scss";
-// @import "../sass/components/demo.scss";
+@import '../sass/components/demo.scss';
+@import '../sass/components/button.scss';
+@import '../sass/components/textfield.scss';
+@import '../sass/components/card.scss';
+@import '../sass/components/banner.scss';
+
+
+
 
 $color: silver;
 

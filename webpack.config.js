@@ -7,18 +7,22 @@ const path = require("path");
 
 module.exports = {
     entry: {
-        'app': './src/index.js',
+        'build': './src/index.js',
+        'assets/js/banner': './src/assets/js/banner.js',
     },
     output: {
-        path: path.join(__dirname, "/app"),
-        filename: 'app.js',
+        path: path.join(__dirname, "/build"),
+        filename: '[name].js',
         clean: true,
     },
+
+
+
 
 //  Server 
 devServer: {
   static: {
-    directory: path.join(__dirname, '/app'),
+    directory: path.join(__dirname, '/build'),
   },
   // compress: true,
   port: 9000,
@@ -70,6 +74,21 @@ devServer: {
         //     filename: "app/fonts/[name][ext]",
         // }
       },
+
+      //  Babel 
+      {
+        test: /\.(?:js|mjs|cjs)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env', { targets: "defaults" }]
+            ]
+          }
+        }
+      }
+      // Babel
         ],
       },
 
@@ -78,6 +97,22 @@ devServer: {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: "./src/index.html",
+            chunks: ['build']
+        }),
+        new HtmlWebpackPlugin({
+            filename: '/components/button.html',
+            template: "./src/components/button.html",
+            chunks: ['build']
+        }),
+        new HtmlWebpackPlugin({
+            filename: '/components/textfield.html',
+            template: "./src/components/textfield.html",
+            chunks: ['build']
+        }),
+        new HtmlWebpackPlugin({
+            filename: '/components/banner.html',
+            template: "./src/components/banner.html",
+            chunks: ['build', 'assets/js/banner.js']
         }),
         // new CleanWebpackPlugin(),
 
