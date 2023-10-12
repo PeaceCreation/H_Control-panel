@@ -5,25 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> الصفحة الرئسية </title>
-    <!-- <link rel="stylesheet" href="../src/assets/sass/vendors/icon/style.css"> -->
+    <!-- <script type="text/html" src="{require('./index.js')}"></script> -->
 </head>
 <body>
-    <div class="component-container">
-        <div class="c-upload">
-            <header class="c-upload__header">
-                <h4 class="c-upload__title">ارفع المنتج</h4>
-                <label for="upload-image"  class="c-upload__label"> ارفع الصورة</label>
-                <span class="c-upload__label c-upload__label--remove js-upload-remove">احذف الصورة</span>
+    <div class="page-container">
+        <sidebar></sidebar>
+        <div class="single-page">
+            <header class="page-header">
+                <h1 class="page-title">اضافة مستخدم</h1>
+                <button type="submit" form="add-users" class="c-btn c-btn--primary" name="submit"> مستخدم جديد</button>
             </header>
-            <div class="c-upload__body">
-                <div class="c-upload__image">
-                    <img  class="js-upload-placeholder">
+            <form action="" class="c-form__users" mame="add-users">
+                <div class="c-upload c-upload--small js-upload">
+                    <header class="c-upload__header">
+                        <h4 class="c-upload__title">ارفع  الصورةالمستخدم </h4>
+                    </header>
+                    <div class="c-upload__body">
+                        <label for="upload-image"  class="c-upload__label"> ارفع الصورة</label>
+                        <img  class="js-upload-placeholder">
+                        <input type="file" id="upload-image" class="c-upload__field js-upload-value">
+                    </div>
+                    <span class="c-upload__label c-upload__label--remove js-upload-remove">احذف الصورة</span>
                 </div>
-                <input type="file" id="upload-image" class="c-upload__field js-upload-value">
-                <span class="c-upload__subtitle">اسحب الصورة هنا لرفعها</span>
-            </div>
+                <div class="c-form__controls">
+                    <div class="c-form__row">
+                        <div class="c-textfield">
+                            <label for="username" class="c-textfield__label">  اسم مستخدم </label>
+                            <input type="text" class="c-textfield__input" placeholder="" id="username" required>
+                            <br> 
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <div class="c-textfield">
+                            <label for="email" class="c-textfield__label">    البريد </label>
+                            <input type="email" class="c-textfield__input" placeholder="" id="email" required > 
+                            <br>
+                        </div>
+                        <div class="c-textfield">
+                            <label for="email" class="c-textfield__label">    تاكيد البريد </label>
+                            <input type="email" class="c-textfield__input" placeholder="" id="email" required > 
+                            <br>
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <div class="c-textfield">
+                            <label for="user-password" class="c-textfield__label">   كلمة السر </label>
+                            <input type="password" class="c-textfield__input" placeholder="" id="user-password" required>
+                            <br> 
+                        </div>
+                    </div>
+                    <div class="c-form__row">
+                        <div class="c-textfield">
+                            <label for="confirm" class="c-textfield__label">     تاكيد كلمة السر </label>
+                            <input type="password" class="c-textfield__input" placeholder="" id="confirm" required>
+                            <br> 
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            <help></help>
         </div>
     </div>
-    <script type="text/html" src="{require('./index.js')}"></script>
 </body>
 </html>

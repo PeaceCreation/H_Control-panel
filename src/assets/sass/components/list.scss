@@ -10,10 +10,7 @@
         width: 60px;
         margin-left:spacing("small");
     }
-    &__data{
-        flex-grow:1;
-        margin-left:spacing("small");
-    }
+    &
     &__actions{
         margin-right: auto;
         text-align: left;
@@ -24,4 +21,14 @@
             opacity:1;
         }
     }
+}
+.c-list--tabel-row{
+    display: table-row;
+}
+.c-list__data{
+    flex-grow:1;
+    margin-left:spacing("small");
+}
+.c-table__navigation__arrows{
+
 }

@@ -21,7 +21,4 @@
 
 const tabs = document.querySelectorAll(".c-tabs .js-tab-link")
 
-
-console.log(tabs)
-
-
+console.log("banner")

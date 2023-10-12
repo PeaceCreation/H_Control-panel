@@ -1,0 +1,33 @@
+.c-form{
+    display: flex;
+    align-items: flex-start;
+}
+.c-form__row{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap:24px;
+    // > *{
+    //     flex:1 0 auto;
+    //     margin-top:spacing("extra-wide");
+    //     margin-bottom:spacing("extra-wide");
+    //     flex-wrap:wrap;
+    // }
+}
+
+.welcome-tage{
+    font-size:28px;
+}
+
+.c-form__controls{
+    margin:0 20px;
+}
+
+.single-page{
+    // padding-right:$layout-sidebar + spacing("normal");
+    // padding-left: spacing("normal");
+}
+
+.c-form__users{
+    display: block;
+}

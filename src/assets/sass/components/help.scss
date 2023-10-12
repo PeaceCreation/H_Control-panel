@@ -1,0 +1,15 @@
+.c-help{
+    display: flex;
+    align-items: center;
+    border-radius:(spacing("small") * 2);
+    border:1px solid rgba(darken($color-primary, 30%), 0.15);
+    background-color: White;
+    padding:spacing();
+    margin:spacing("extra-wide") auto;
+    width:fit-content;
+    &__icon{
+        font-size:20px;
+        color:$color-primary;
+        margin-left:spacing("extra-small");
+    }
+}

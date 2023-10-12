@@ -1,0 +1,46 @@
+$input-media-size: 40px;
+
+.c-table{
+    @include e-card;
+    padding:0 0 spacing("normal");
+    width:100%;
+    font-size: 14px;
+    border-collapse: collapse;
+    &__data{
+        td{
+            text-align: right;
+            img{
+                width:$input-media-size;
+                height:$input-media-size;
+                vertical-align: middle;
+            }
+        }
+        th, td{
+           padding:spacing("extra-small") 0;
+           border-bottom: 1px solid rgba(darken(white, 40%), 0.15);
+           &:first-child{
+            padding-right:spacing("normal");
+            width: 75px;
+           }
+        }
+    }
+    &__header{
+        display:flex;
+        align-items:baseline;
+        margin-bottom: spacing("small");
+        padding: 0 spacing("normal");
+    }
+    &__navigation{
+        margin-right:auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        font-size:20px;
+        margin-bottom:0px;
+        margin-left: spacing("small");
+        margin-top: spacing("small");
+
+    }
+}

@@ -1,0 +1,34 @@
+$indicator-size: 14px;
+.c-actions{
+    @include e-card;
+    padding: 0 spacing("extra-small");
+    width:100%;
+    list-style: none;
+    .c-action{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: spacing("extra-small");
+        border-bottom: 1px solid rba(darken($color-brand, 40%), 0.1);
+        &:last-child{
+            border-bottom: none;
+        }
+        &__title{
+            font-size: 14px;
+            margin-left:auto;
+            display: flex;
+            align-items:center;
+            &::before{
+                content:"";
+                position: absolute;
+                width:$indicator-size;
+                height:$indicator-size;
+                border-radius: 7px;
+                background-color:$color-brand;
+                display: block;
+                // right:35px;
+            }
+        }
+    }
+
+}
